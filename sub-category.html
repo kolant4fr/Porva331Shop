@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <title>Sub-Category</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">E-Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+              </svg>
+            </li>
+            <li class="nav-item">
+              <a href="category.html" class="nav-link">Categories</a>
+            </li>
+            <li>
+              <a href="" class="nav-link">FAQ</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact us</a>
+            </li>
+          </ul>
+          <from action="" class="d-flex" role="search">
+            <input
+              type="search"
+              placeholder="Search"
+              class="form-control me-2"
+              aria-label="Search"
+            />
+            <button class="btn btn-secondary type="submit">Search</button>
+          </from>
+          <div class="d-flex">
+            <button
+              class="btn btn-dark px-3 mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#signInModal"
+            >
+              Sign in
+            </button>
+            <button
+              class="btn btn-dark px-3 mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#sigUpModal"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div
+      class="modal fade"
+      id="signInModal"
+      tabindex="-1"
+      aria-labelledby="signInModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="signInModalLabel">Sign in</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label"
+                  >Email</label
+                >
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPass" class="col-sm-2 col-form-label"
+                  >Password</label
+                >
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPass" />
+                </div>
+              </div>
+            </form>
+            <fieldset>
+              
+              <div class="row-mb">
+                <div class="col-form-label col-sm-2"></div>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      id="gridcheck"
+                      class="form-check-input"
+                    />
+                    <label for="gridcheck" class="form-check-label"
+                      >Remember me</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div
+      class="modal fade"
+      id="sigUpModal"
+      tabindex="-1"
+      aria-labelledby="sigUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="sigUpModalLabel">Register</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="row mb-3">
+                <label for="inputusername" class="col-sm-2 col-form-label"
+                  >Username</label
+                >
+                <div class="col-sm-10">
+                  <input
+                    type="username"
+                    class="form-control"
+                    id="inputusername"
+                  />
+                </div>
+              </div>
+            
+              <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label"
+                  >Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPhone" class="col-sm-2 col-form-label"
+                  >Phone</label>
+                <div class="col-sm-10">
+                  <input type="tel" class="form-control" id="inputPhone" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPass" class="col-sm-2 col-form-label"
+                  >Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPass" />
+                </div>
+              </div>
+              <div class="row">
+                <label for="inputPassConf" class="col-sm-2 col-form-label"
+                  >Confirm</label>
+                <div class="col-sm-10">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassConf"
+                  />
+                </div>
+              </div>
+            </form>
+            <fieldset>
+              
+              <div class="row-mb">
+                <div class="col-form-label col-sm-2"></div>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      id="gridcheck"
+                      class="form-check-input"
+                    />
+                    <label for="gridcheck" class="form-check-label"
+                      >I`m agree with the rules</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <h4 class="navbar-dark">...</h4>
+    </div>
+    <div class="container my-5">
+      <div class="row row-sm-2 row-md-2 row-lg-2 ">
+        <div class="col-sm-12 col-md-4 col-lg-2  bg-light">
+          <h4>Brands</h4>
+          <ul class="navbar-nav">
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> Acer</label>
+            </li>
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> Apple</label>
+            </li>
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> Asus</label>
+            </li>
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> MSI</label>
+            </li>
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> Lenovo</label>
+            </li>
+          </ul>
+          <h4 class="mt-4">Types</h4>
+          <ul class="navbar-nav">
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> Laptop</label>
+            </li>
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> PC</label>
+            </li>
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> Monitor</label>
+            </li>
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> SSD</label>
+            </li>
+            <li class="mb-1">
+              <input type="checkbox" class="form-check-input" />
+              <label for="gridcheck" class="form-check-label"> HDD</label>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="col-md-10" >
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 bg-light">
+            <div class="col">
+              <div class=" card-body" background-color:#E8E8E8>
+                <img src="img/product.jpg" alt="..." class="card-img-top my-3" />
+                <h5 class="card-title">Product</h5>
+                <p class="card-text">
+                  TEXT
+                </p>
+                <div class="my-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+                  <svg svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                  <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                </svg>
+              </div>
+                <strong class="position-absolute price">$999</strong>
+              <div class="basbtn">
+                <a href="product.html" class="position-relative btn btn-success cat-button"
+                  >Buy</a
+                >  
+              </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class=" card-body">
+                <img src="img/product.jpg" alt="..." class="card-img-top my-3" />
+                <h5 class="card-title">Product</h5>
+                <p class="card-text">
+                  TEXT
+                </p>
+                <div class="my-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+                  <svg svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                  </svg>
+              </div>
+                <strong class="position-absolute price">$999</strong>
+              <div class="basbtn">
+                <a href="product.html" class="position-relative btn btn-success cat-button"
+                  >Buy</a
+                >  
+              </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class=" card-body">
+                <img src="img/product.jpg" alt="..." class="card-img-top my-3" />
+                <h5 class="card-title">Product</h5>
+                <p class="card-text">
+                  TEXT
+                </p>
+                <div class="my-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+                  <svg svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                  </svg>
+              </div>
+                <strong class="position-absolute price">$999</strong>
+              <div class="basbtn">
+                <a href="product.html" class="position-relative btn btn-success cat-button"
+                  >Buy</a
+                >  
+              </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class=" card-body">
+                <img src="img/product.jpg" alt="..." class="card-img-top my-3" />
+                <h5 class="card-title">Product</h5>
+                <p class="card-text">
+                 TEXT
+                </p>
+                <div class="my-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+                  <svg svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                  </svg>
+              </div>
+                <strong class="position-absolute price">$999</strong>
+              <div class="basbtn">
+                <a href="product.html" class="position-relative btn btn-success cat-button"
+                  >Buy</a
+                >  
+              </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class=" card-body">
+                <img src="img/product.jpg" alt="..." class="card-img-top my-3" />
+                <h5 class="card-title">Product</h5>
+                <p class="card-text">
+                  TEXT
+                </p>
+                <div class="my-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+                  <svg svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                  </svg>
+              </div>
+                <strong class="position-absolute price">$999</strong>
+              <div class="basbtn">
+                <a href="product.html" class="position-relative btn btn-success cat-button"
+                  >Buy</a
+                >  
+              </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class=" card-body">
+                <img src="img/product.jpg" alt="..." class="card-img-top my-3" />
+                <h5 class="card-title">Product</h5>
+                <p class="card-text">
+                 TEXT
+                </p>
+                <div class="my-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                  </svg>
+                  <svg svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                  </svg>
+              </div>
+                <strong class="position-absolute price">$999</strong>
+              <div class="basbtn">
+                <a href="product.html" class="position-relative btn btn-success cat-button"
+                  >Buy</a
+                >  
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    
+    <script src="js/bootstrap.js"></script>
+  </body>
+  <link rel="stylesheet" href="Style/sub.css">
+</html>

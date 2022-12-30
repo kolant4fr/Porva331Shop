@@ -1,0 +1,40 @@
+.card {
+    margin-bottom: 15px;
+
+}
+.card-img-top{
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.card-text{
+    white-space: nowrap;
+    width: 100%;
+    overflow:  hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #ffffff; 
+}
+
+.cat-button{
+    width: 100px;
+}
+
+.col{
+    overflow: hidden;
+    margin-bottom: 15px;
+    max-width: 338px;
+    min-width: 338px;
+}
+
+.body {
+    overflow: hidden;
+}
+
+.basbtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.price {
+    font-size: 20px;
+}
